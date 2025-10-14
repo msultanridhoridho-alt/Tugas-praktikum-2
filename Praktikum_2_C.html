@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tugas uaux 2</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: #e0e0e0;
+      padding: 10px 20px;
+      border-bottom: 2px solid #ccc;
+    }
+
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 800px;
+      background: white;
+      margin: 30px auto;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .form-group {
+      margin-bottom: 10px;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    textarea {
+      height: 60px;
+    }
+
+    .checkbox-group {
+      margin-top: 8px;
+    }
+
+    .btn {
+      background: grey;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      background: darkgreen;
+    }
+
+    .image-box {
+      width: 150px;
+      height: 150px;
+      border: 2px dashed #aaa;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 10px;
+      color: #666;
+      font-size: 14px;
+    }
+
+    .upload-section {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#">Home</a> |
+      <a href="#">Generate Link</a> |
+      <a href="#">Transaction History</a> |
+      <a href="#">Policy</a> |
+      <a href="#">Logout</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2></h2>
+
+    <div class="upload-section">
+      <div class="image-box">Upload Picture</div>
+      <button class="btn">Upload Picture</button>
+    </div>
+
+    <form>
+      <div class="form-group">
+        <label>Title Here:</label>
+        <input type="text" value="MacBook Air £800">
+      </div>
+
+      <div class="form-group">
+        <label>Description:</label>
+        <textarea>Year: 2009
+Model:
+Condition: Mint</textarea>
+      </div>
+
+      <div class="form-group">
+        <label>Account Number:</label>
+        <input type="text" value="">
+      </div>
+
+      <div class="form-group">
+        <label>Bank:</label>
+        <select>
+          <option>HSBC</option>
+          <option>BNI</option>
+          <option>BCA</option>
+          <option>Mandiri</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Account Holder:</label>
+        <input type="text" placeholder="Name Here">
+      </div>
+
+      <div class="form-group">
+        <label>Transaction:</label>
+        <select>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+        </select>
+        <p style="font-size: 10px; color: #555;">* if the transaction is for 3 persons, choose 3 from the list</p>
+      </div>
+
+      <div class="checkbox-group">
+        <label><input type="checkbox" checked> Send to Mobile Phone</label><br>
+        <label><input type="checkbox" checked> Send to Email</label>
+      </div>
+
+      <div class="form-group">
+        <label>Send to Mobile Phone:</label>
+        <input type="text" value="">
+      </div>
+
+      <div class="form-group">
+        <label>Send to Email:</label>
+        <input type="email" value="">
+      </div>
+
+      <button class="btn">Generate Nabr Link</button>
+    </form>
+  </div>
+</body>
+</html>
